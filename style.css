@@ -6,7 +6,7 @@ body {
     font-family: Arial, sans-serif; /* Fallback font family */
     text-align: center; /* Center-align text */
     margin: 0; /* Remove default margin */
-    background-color: #FADADD; /* Set background color to light pink */
+    background-color: #fadaf6; /* Set background color to light pink */
 }
 
 #container {
@@ -24,6 +24,7 @@ body {
 #question {
     font-family: 'Sacramento', cursive; /* Apply Sacramento font to the question */
     font-size: 52px; /* Set font size for the question */
+    font-weight: bold;
 }
 
 #options {
@@ -39,5 +40,6 @@ button {
     color: white; /* Set text color to white */
     border: none; /* Remove button border */
     cursor: pointer; /* Set cursor to pointer on hover */
+    font-weight: bold;
 }
 
