@@ -43,3 +43,13 @@ button {
     font-weight: bold;
 }
 
+#confess{
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    background-color: #fefcf3;
+    color: #333333;
+    padding: 40px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}

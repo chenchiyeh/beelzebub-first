@@ -27,7 +27,7 @@ function selectOption(option) {
 
 // Function to flash rainbow colors and then execute a callback function
 function flashRainbowColors(callback) {
-    var colors = ['#ff0000', '#ff7f00', '#ffff00', '#00ff00', '#0000ff', '#4b0082', '#9400d3'];
+    var colors = ['#66c5cc', '#f6cf71', '#f89c74', '#dcb0f2', '#87c55f', '#9eb9f3', '#fe88b1'];
     var i = 0;
     var interval = setInterval(function() {
         document.body.style.backgroundColor = colors[i];
@@ -56,6 +56,7 @@ function displayCat() {
     catImage.onload = function() {
         imageContainer.appendChild(catImage);
     };
+    document.getElementById('confess').style.display = 'none';
 }
 
 // Function to display the cat-heart.gif
@@ -69,15 +70,17 @@ function displayCatHeart() {
     // Set the source (file path) for the cat-heart image
     catHeartImage.src = 'stitch_angel.gif'; // Assuming the cat-heart image is named "cat-heart.gif"
     // Set alternative text for the image (for accessibility)
-    catHeartImage.alt = 'Cat Heart';
+    catHeartImage.alt = 'I love You';
     // When the cat-heart image is fully loaded, add it to the image container
     catHeartImage.onload = function() {
         imageContainer.appendChild(catHeartImage);
         // Hide the options container
         document.getElementById('options').style.display = 'none';
+        document.getElementById('confess').style.display = 'block';
     };
 }
 
 // Display the cat.gif initially
 displayCat();
+
 
